@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-15 22:09:34" Creator="team" Comments="" ID="6b647118e6c0bf30ce9d0d7b748873f5">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-17 00:01:51" Creator="team" Comments="" ID="da195b90514805f9e22fb5ddee537b47">
   <Library_General_Settings>
     <Package_File_Name>LV_TOML</Package_File_Name>
-    <Library_Version>2.1.0.16</Library_Version>
+    <Library_Version>2.2.0.17</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -40,9 +40,15 @@
       <Packager>Antoine Chalons</Packager>
       <URL>https://github.com/AntoineChalons/lv-toml</URL>
       <Release_Notes>new since 2.0.1 :
+- change the way Timestamp are handled by using JDP Science Common VIs (RFC-3339) (GitHub issue #7)
 - add feature : new option (disabled by default) to report an error if an element is not found in TOML data (GitHub issue #13)
 - add feature : return list of missing elements (GitHub issue #15)
-- improve error reporting</Release_Notes>
+- fix bug for non-square 2D arrays (GitHub issue #17)
+- fix bug for path support (gitHub issue #18)
+- fix bug NaN support in float (GitHub issue #20)
+- kill support for array that have more than 2 dimensions
+- improve error reporting
+- add an example VI</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -365,7 +371,7 @@
         <Path>..\src\lib\TOML to LabVIEW.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3107289EAE1EF6B0A36CDBFEB696AFBE</GUID>
+      <GUID>AA7A377E93011B549665D47824B442B3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
