@@ -46,6 +46,7 @@
 	<Item Name="Read TOML File (LV).vi" Type="VI" URL="../Read TOML File (LV).vi"/>
 	<Item Name="Read TOML File (TOML).vi" Type="VI" URL="../Read TOML File (TOML).vi"/>
 	<Item Name="Read TOML File.vi" Type="VI" URL="../Read TOML File.vi"/>
+	<Item Name="replace top level section in TOML data.vi" Type="VI" URL="../replace top level section in TOML data.vi"/>
 	<Item Name="TOML to LabVIEW.vi" Type="VI" URL="../TOML to LabVIEW.vi"/>
 	<Item Name="TOML to LabVIEW.vim" Type="VI" URL="../TOML to LabVIEW.vim"/>
 	<Item Name="Write TOML File (LV).vi" Type="VI" URL="../Write TOML File (LV).vi"/>
