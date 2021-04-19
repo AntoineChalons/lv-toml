@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-17 00:01:51" Creator="team" Comments="" ID="da195b90514805f9e22fb5ddee537b47">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-19 22:31:56" Creator="team" Comments="" ID="894098a2f948249b9bb8004f59dc7a1a">
   <Library_General_Settings>
     <Package_File_Name>LV_TOML</Package_File_Name>
-    <Library_Version>2.2.0.17</Library_Version>
+    <Library_Version>2.3.0.18</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -39,16 +39,10 @@
       <Copyright/>
       <Packager>Antoine Chalons</Packager>
       <URL>https://github.com/AntoineChalons/lv-toml</URL>
-      <Release_Notes>new since 2.0.1 :
-- change the way Timestamp are handled by using JDP Science Common VIs (RFC-3339) (GitHub issue #7)
-- add feature : new option (disabled by default) to report an error if an element is not found in TOML data (GitHub issue #13)
-- add feature : return list of missing elements (GitHub issue #15)
-- fix bug for non-square 2D arrays (GitHub issue #17)
-- fix bug for path support (gitHub issue #18)
-- fix bug NaN support in float (GitHub issue #20)
-- kill support for array that have more than 2 dimensions
-- improve error reporting
-- add an example VI</Release_Notes>
+      <Release_Notes>new since 2.2.0 :
+- added a new example VI
+- added some VI documentation
+- added a new VI to edit a section directly in the TOML intermediate representation</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -371,7 +365,21 @@
         <Path>..\src\lib\TOML to LabVIEW.vim</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AA7A377E93011B549665D47824B442B3</GUID>
+      <Items_Data>
+        <Type>Item</Type>
+        <Sub_Palette_Index>-1</Sub_Palette_Index>
+        <NameSub_Menu_Name>replace top level section in TOML data.vi</NameSub_Menu_Name>
+        <Short_Name/>
+        <is_Merge_VI>false</is_Merge_VI>
+        <Position>
+          <Row>2</Row>
+          <Column>3</Column>
+        </Position>
+        <Icon>00000000</Icon>
+        <Path>..\src\lib\replace top level section in TOML data.vi</Path>
+        <VI_Title/>
+      </Items_Data>
+      <GUID>41C2A7BBF250598230BC920C54343ABD</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
