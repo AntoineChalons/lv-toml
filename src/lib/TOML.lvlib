@@ -39,7 +39,13 @@
 		<Item Name="TOML Key-Value Pair.ctl" Type="VI" URL="../TOML Key-Value Pair.ctl"/>
 		<Item Name="TOML Value.ctl" Type="VI" URL="../TOML Value.ctl"/>
 	</Item>
+	<Item Name="vis for palette merge" Type="Folder">
+		<Item Name="Merge get section vim.vi" Type="VI" URL="../Merge get section vim.vi"/>
+		<Item Name="Merge get section.vi" Type="VI" URL="../Merge get section.vi"/>
+	</Item>
 	<Item Name="Compose TOML String.vi" Type="VI" URL="../Compose TOML String.vi"/>
+	<Item Name="get top level section in TOML data.vi" Type="VI" URL="../get top level section in TOML data.vi"/>
+	<Item Name="get top level section in TOML data.vim" Type="VI" URL="../get top level section in TOML data.vim"/>
 	<Item Name="LabVIEW to TOML.vi" Type="VI" URL="../LabVIEW to TOML.vi"/>
 	<Item Name="Parse TOML String.vi" Type="VI" URL="../Parse TOML String.vi"/>
 	<Item Name="Read from TOML File.vim" Type="VI" URL="../Read from TOML File.vim"/>
