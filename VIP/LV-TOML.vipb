@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-19 22:31:56" Creator="team" Comments="" ID="894098a2f948249b9bb8004f59dc7a1a">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2021-04-20 08:40:04" Creator="team" Comments="" ID="058381eb7ec22d43a9294743fde4c3f4">
   <Library_General_Settings>
     <Package_File_Name>LV_TOML</Package_File_Name>
-    <Library_Version>2.3.0.18</Library_Version>
+    <Library_Version>2.3.0.19</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -42,7 +42,8 @@
       <Release_Notes>new since 2.2.0 :
 - added a new example VI
 - added some VI documentation
-- added a new VI to edit a section directly in the TOML intermediate representation</Release_Notes>
+- added a new VI to edit a top level section directly in the TOML intermediate representation
+- added new VI and VIM to get a top level section directly from the TOML intermediate representation</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -379,7 +380,7 @@
         <Path>..\src\lib\replace top level section in TOML data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>41C2A7BBF250598230BC920C54343ABD</GUID>
+      <GUID>C807586B363CB82878F2CECEE7F10027</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
