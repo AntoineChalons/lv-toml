@@ -59,4 +59,70 @@ Parse table string ""
 <nierror code="543018">
 Parse inline table string ""
 </nierror>
+<nierror code="543019">
+Element from LV data type passed in not found in TOML data (maybe a typo?)
+</nierror>
+<nierror code="543020">
+Array with more than 2 dimensions are not supported
+</nierror>
+<nierror code="543021">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543022">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543023">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543024">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543025">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543026">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543027">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543028">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543029">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543030">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543031">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543032">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543033">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543034">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543035">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543036">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543037">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543038">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543039">
+reserved for LV-TOML library
+</nierror>
+<nierror code="543040">
+reserved for LV-TOML library
+</nierror>
 </nidocument>
