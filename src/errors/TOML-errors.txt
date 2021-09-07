@@ -66,7 +66,7 @@ Element from LV data type passed in not found in TOML data (maybe a typo?)
 Array with more than 2 dimensions are not supported
 </nierror>
 <nierror code="543021">
-reserved for LV-TOML library
+Miss-typed enum value in toml file
 </nierror>
 <nierror code="543022">
 reserved for LV-TOML library
