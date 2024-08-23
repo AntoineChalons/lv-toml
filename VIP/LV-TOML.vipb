@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2024-02-13 14:30:13" Creator="team" Comments="" ID="b316b6764726196104462eed81b24ac3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2021-04-06 17:40:28" Modified_Date="2024-08-24 00:08:48" Creator="team" Comments="" ID="f255984ea85212e69297057a4ad18991">
   <Library_General_Settings>
     <Package_File_Name>LV_TOML</Package_File_Name>
-    <Library_Version>3.0.0.25</Library_Version>
+    <Library_Version>3.2.0.28</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\src</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -17,10 +17,10 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <External_Dependencies>jdp_science_lib_common_utilities &gt;= 1.4.0.17</External_Dependencies>
+      <External_Dependencies>jdp_science_lib_common_utilities &gt;= 1.4.1.18</External_Dependencies>
       <External_Dependencies>oglib_error &gt;= 4.2.0.23</External_Dependencies>
       <External_Dependencies>oglib_lvdata &gt;= 5.0.0.27</External_Dependencies>
-      <Direct_Dependencies>jdp_science_lib_common_utilities-1.4.0.17</Direct_Dependencies>
+      <Direct_Dependencies>jdp_science_lib_common_utilities-1.4.1.18</Direct_Dependencies>
       <Direct_Dependencies>oglib_error-4.2.0.23</Direct_Dependencies>
       <Direct_Dependencies>oglib_lvdata-5.0.0.27</Direct_Dependencies>
     </Package_Dependencies>
@@ -39,7 +39,9 @@
       <Copyright/>
       <Packager>Antoine Chalons</Packager>
       <URL>https://github.com/AntoineChalons/lv-toml</URL>
-      <Release_Notes>3.0 : switch to LV 2020</Release_Notes>
+      <Release_Notes>3.0 : switch to LV 2020
+3.1 : improve error handling / reporting
+3.2 : fix missing key/section handling in get section anf get section vim</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -405,7 +407,7 @@
         <Path>..\src\lib\Write Top Level Value.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>145B17401C30F4B5E9396B00D6F05CB1</GUID>
+      <GUID>88711F2070FAE3D1D9DCC477F96C78BD</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
