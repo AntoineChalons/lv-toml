@@ -12,10 +12,32 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="src" Type="Folder" URL="../src">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-			<Property Name="NI.SortType" Type="Int">0</Property>
+		<Item Name="examples" Type="Folder">
+			<Item Name="TOML example write section.vi" Type="VI" URL="../src/examples/TOML example write section.vi"/>
+			<Item Name="TOML Files Example.vi" Type="VI" URL="../src/examples/TOML Files Example.vi"/>
+			<Item Name="TOML sections.vi" Type="VI" URL="../src/examples/TOML sections.vi"/>
+			<Item Name="TOML to tree Example.vi" Type="VI" URL="../src/examples/TOML to tree Example.vi"/>
 		</Item>
+		<Item Name="Unit test" Type="Folder">
+			<Item Name="UT_001_TOML to LV.vi" Type="VI" URL="../src/Unit test/UT_001_TOML to LV.vi"/>
+			<Item Name="UT_002_TOML to LV.vi" Type="VI" URL="../src/Unit test/UT_002_TOML to LV.vi"/>
+			<Item Name="UT_003_TOML to LV.vi" Type="VI" URL="../src/Unit test/UT_003_TOML to LV.vi"/>
+			<Item Name="UT_004_LV to TOML.vi" Type="VI" URL="../src/Unit test/UT_004_LV to TOML.vi"/>
+			<Item Name="UT_005_LV to TOML.vi" Type="VI" URL="../src/Unit test/UT_005_LV to TOML.vi"/>
+			<Item Name="UT_006_LV to TOML.vi" Type="VI" URL="../src/Unit test/UT_006_LV to TOML.vi"/>
+			<Item Name="UT_007_Edit TOML data.vi" Type="VI" URL="../src/Unit test/UT_007_Edit TOML data.vi"/>
+			<Item Name="UT_008_Get TOML data.vi" Type="VI" URL="../src/Unit test/UT_008_Get TOML data.vi"/>
+			<Item Name="UT_009_Get TOML data.vi" Type="VI" URL="../src/Unit test/UT_009_Get TOML data.vi"/>
+			<Item Name="UT_010_TOML to LV_enum.vi" Type="VI" URL="../src/Unit test/UT_010_TOML to LV_enum.vi"/>
+			<Item Name="UT_011_Comments.vi" Type="VI" URL="../src/Unit test/UT_011_Comments.vi"/>
+			<Item Name="UT__all.vi" Type="VI" URL="../src/Unit test/UT__all.vi"/>
+			<Item Name="UT_get section vim.vi" Type="VI" URL="../src/Unit test/UT_get section vim.vi"/>
+			<Item Name="UT_get section.vi" Type="VI" URL="../src/Unit test/UT_get section.vi"/>
+			<Item Name="UT_LV to TOML.vi" Type="VI" URL="../src/Unit test/UT_LV to TOML.vi"/>
+			<Item Name="UT_TOML to LV.vi" Type="VI" URL="../src/Unit test/UT_TOML to LV.vi"/>
+		</Item>
+		<Item Name="TOML-errors.txt" Type="Document" URL="../src/errors/TOML-errors.txt"/>
+		<Item Name="TOML.lvlib" Type="Library" URL="../src/lib/TOML.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -179,123 +201,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="decoder" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{4A5CAF67-430E-4781-95A2-CB705BB1FB10}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{5277906F-F490-4F10-B843-DEFC525071AD}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">1</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{F7D321C1-CDB5-48D9-8FD5-97384BF7F58A}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">decoder</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/decoder</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{E526DB6C-F4F8-4D2D-A5CE-B82A00E8199B}</Property>
-				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
-				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">67</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">decoder.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/decoder/decoder.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/decoder/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[2].destName" Type="Str">app</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/decoder</Property>
-				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FAF89CC3-1A7E-4BC6-8A2F-128501AA7E6A}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].newName" Type="Str">input.txt</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
-				<Property Name="Source[3].newName" Type="Str">input.txt</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
-				<Property Name="TgtF_companyName" Type="Str">Zaphiro Technologies SA</Property>
-				<Property Name="TgtF_fastFileFormat" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">decoder</Property>
-				<Property Name="TgtF_internalName" Type="Str">decoder</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Zaphiro Technologies SA</Property>
-				<Property Name="TgtF_productName" Type="Str">decoder</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{F89D6609-091F-4C40-B1B4-768A47282789}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">decoder.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="encoder" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{0D5BE3A1-DC5C-4D8D-BF7A-774F40D79B27}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{662DA4F1-784E-40E5-ABE7-511835607053}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">1</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{67934356-2ED2-4082-956C-04960F46EA8F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">encoder</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/encoder</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{56F94607-40CA-437D-B1F9-24B2C2C94B9C}</Property>
-				<Property Name="Bld_supportedLanguage[0]" Type="Str">English</Property>
-				<Property Name="Bld_supportedLanguageCount" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">69</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">encoder.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/encoder/encoder.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/encoder/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[2].destName" Type="Str">app</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/encoder</Property>
-				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FAF89CC3-1A7E-4BC6-8A2F-128501AA7E6A}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref"></Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].itemID" Type="Ref"></Property>
-				<Property Name="Source[3].newName" Type="Str">input.txt</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[4].itemID" Type="Ref"></Property>
-				<Property Name="Source[4].newName" Type="Str">input.txt</Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
-				<Property Name="TgtF_companyName" Type="Str">Zaphiro Technologies SA</Property>
-				<Property Name="TgtF_fastFileFormat" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">decoder</Property>
-				<Property Name="TgtF_internalName" Type="Str">decoder</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Zaphiro Technologies SA</Property>
-				<Property Name="TgtF_productName" Type="Str">decoder</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{399EF509-A352-4B00-B5E3-CBD675E3161C}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">encoder.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
