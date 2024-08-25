@@ -22,6 +22,7 @@
 		<Item Name="Set Key.vi" Type="VI" URL="../Set Key.vi"/>
 		<Item Name="Set Table Context.vi" Type="VI" URL="../Set Table Context.vi"/>
 		<Item Name="Set Value.vi" Type="VI" URL="../Set Value.vi"/>
+		<Item Name="TOML-to-tree-recursive.vi" Type="VI" URL="../TOML-to-tree-recursive.vi"/>
 	</Item>
 	<Item Name="Typedefs" Type="Folder">
 		<Item Name="Private" Type="Folder">
@@ -55,6 +56,7 @@
 	<Item Name="replace top level section in TOML data.vi" Type="VI" URL="../replace top level section in TOML data.vi"/>
 	<Item Name="TOML to LabVIEW.vi" Type="VI" URL="../TOML to LabVIEW.vi"/>
 	<Item Name="TOML to LabVIEW.vim" Type="VI" URL="../TOML to LabVIEW.vim"/>
+	<Item Name="TOML-to-tree.vi" Type="VI" URL="../TOML-to-tree.vi"/>
 	<Item Name="Write TOML File (LV).vi" Type="VI" URL="../Write TOML File (LV).vi"/>
 	<Item Name="Write TOML File (TOML).vi" Type="VI" URL="../Write TOML File (TOML).vi"/>
 	<Item Name="Write TOML File.vi" Type="VI" URL="../Write TOML File.vi"/>
